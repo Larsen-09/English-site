@@ -1,3 +1,7 @@
+body {
+
+  margin:0px;
+}
 h1 {
     text-align: center; 
   background: rgba(0, 0, 0, 0.500); 
@@ -17,6 +21,18 @@ h3 {
   margin-top: 30px;
 }
 header{text-align: center;}
-nav {
-   
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 8rem;
+    display: flex;
+    overflow: hidden;
+    background-color: #000000;
+}
+ul li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 14px 16px;
+  text-decoration: none;
 }
