@@ -1,21 +1,23 @@
-#tittel_boks {
-    text-align: center; 
-  background: rgba(255, 255, 255, 0.9); 
-  color: #0022ff;                    
-  display: inline-block;
-  padding: 20px 40px;
-  border-radius: 10px;
-  margin-top: 10px;
-}
+
+#tittel_boks,
 #undertittel_boks {
-    text-align: center;
-  background: rgba(255, 255, 255, 0.9); 
-  color: #000000;                    
-  display: inline-block;
+  background: rgba(255, 255, 255, 0.9);
   padding: 20px 40px;
   border-radius: 10px;
-  margin-top: 10px;
+  max-width: 200px;
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+  transition: background 0.3s, color 0.3s;
 }
+
+#tittel_boks:hover,
+#undertittel_boks:hover {
+  background: #003366;
+  color: #fff;
+  cursor: pointer;
+}
+
 header{text-align: center;}
 nav ul {
     list-style-type: none;
@@ -27,16 +29,26 @@ nav ul {
     background-color: #000000;
 }
 ul li a {
-  display: block;
+  display: inline-block;
   color: rgb(255, 255, 255);
   padding: 14px 16px;
   text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+ul li a:hover {
+  background: #35a4ff;
+  color: #000000;
+  cursor: pointer;
 }
 .container {
   display: grid;
-  column-gap: 150px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr); /* Ensures 3 columns */
+  column-gap: 40px; /* Adjust gap as needed */
   padding: 30px;
+  width: 100%;
+  max-width: 1200px; /* Optional: keeps grid from being too wide */
+  margin: 0 auto;    /* Centers the grid */
 }
 .container > div {
   background-color: #f1f1f1;
@@ -44,4 +56,37 @@ ul li a {
   padding: 10px;
   font-size: 20px;
   text-align: center;
+
+}
+
+.flex-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 0 1 200px;    /* Makes items narrower (basis 200px, no grow, can shrink) */
+  max-width: 220px;   /* Limits horizontal size */
+  min-height: 350px;  /* Makes them taller vertically */
+  height: 100%;       /* Ensures they stretch vertically if needed */
+  display: flex;      /* Optional: for vertical alignment inside */
+  flex-direction: column; /* Optional: stack content vertically */
+  justify-content: flex-start; /* Optional: align content to top */
+}
+
+.flex-item.min-div {
+  background-color: lightblue;
+  border: 1px solid blue;
+  transition: background-color 0.3s ease;
+}
+
+.flex-item.min-div:hover {
+  background-color: darkblue;
+  color: white;
+  cursor: pointer;
+}
+.flex-container {
+  display: flex;
+  gap: 40px; /* Optional: space between items */
+  justify-content: center; /* Optional: center items horizontally */
+  flex-wrap: wrap; /* Optional: allows wrapping on smaller screens */
 }
