@@ -1,4 +1,6 @@
-
+body {
+  margin:0px;
+}
 #tittel_boks,
 #undertittel_boks {
   background: rgba(255, 255, 255, 0.9);
@@ -44,19 +46,29 @@ ul li a:hover {
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Ensures 3 columns */
-  column-gap: 40px; /* Adjust gap as needed */
+  column-gap: 80px; /* Adjust gap as needed */
   padding: 30px;
   width: 100%;
   max-width: 1200px; /* Optional: keeps grid from being too wide */
   margin: 0 auto;    /* Centers the grid */
 }
-.container > div {
-  background-color: #f1f1f1;
-  border: 2px solid black;
-  padding: 10px;
-  font-size: 20px;
-  text-align: center;
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 80px; /* increased gap */
+  padding: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
+.flex-container {
+  display: flex;
+  gap: 60px;           /* Reduced gap for better symmetry */
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;   /* Adjust as needed for your layout */
+  margin: 0 auto;
 }
 
 .flex-item {
@@ -64,13 +76,13 @@ ul li a:hover {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  flex: 0 1 200px;    /* Makes items narrower (basis 200px, no grow, can shrink) */
-  max-width: 220px;   /* Limits horizontal size */
-  min-height: 350px;  /* Makes them taller vertically */
-  height: 100%;       /* Ensures they stretch vertically if needed */
-  display: flex;      /* Optional: for vertical alignment inside */
-  flex-direction: column; /* Optional: stack content vertically */
-  justify-content: flex-start; /* Optional: align content to top */
+  flex: 0 0 250px;     /* Fixed width, no grow/shrink */
+  width: 250px;
+  min-height: 350px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .flex-item.min-div {
@@ -83,10 +95,4 @@ ul li a:hover {
   background-color: darkblue;
   color: white;
   cursor: pointer;
-}
-.flex-container {
-  display: flex;
-  gap: 40px; /* Optional: space between items */
-  justify-content: center; /* Optional: center items horizontally */
-  flex-wrap: wrap; /* Optional: allows wrapping on smaller screens */
 }
