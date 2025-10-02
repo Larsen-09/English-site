@@ -73,7 +73,7 @@ ul li a:hover {
 
 .flex-item {
   background-color: #fff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   flex: 0 0 250px;     /* Fixed width, no grow/shrink */
