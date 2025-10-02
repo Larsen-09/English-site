@@ -17,7 +17,6 @@ body {
 #undertittel_boks:hover {
   background: #003366;
   color: #fff;
-  cursor: pointer;
 }
 
 header{text-align: center;}
@@ -41,7 +40,6 @@ ul li a {
 ul li a:hover {
   background: #35a4ff;
   color: #000000;
-  cursor: pointer;
 }
 .container {
   display: grid;
