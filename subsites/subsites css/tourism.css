@@ -4,12 +4,13 @@ body {
   margin:0px;
 }
 
+
 .flex-container {
   display: flex;
-  gap: 60px;           /* Reduced gap for better symmetry */
+  gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1000px;   /* Adjust as needed for your layout */
+  max-width: 1550px; /* 2 boxes of 750px + 1 gap of 30px + some padding */
   margin: 0 auto;
 }
 
@@ -18,7 +19,7 @@ body {
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 250px;
+  width: 500px;
   min-height: 350px;
   height: 100%;
   display: flex;

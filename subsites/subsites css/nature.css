@@ -1,16 +1,10 @@
-body {
-  background-image: url("../Images/scotland.jpg");
-  background-size: cover;
-  margin:0px;
-}
-
 .flex-container {
   display: flex;
-  gap: 60px;           /* Reduced gap for better symmetry */
+  gap: 200px;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1000px;   /* Adjust as needed for your layout */
-  margin: 0 auto;
+  max-width: 1000px;
+  margin: 0 auto 50px auto; /* Adds 50px vertical gap below each row */
 }
 
 .flex-item {
@@ -18,7 +12,7 @@ body {
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 250px;
+  width: 400px;
   min-height: 350px;
   height: 100%;
   display: flex;
@@ -29,10 +23,15 @@ body {
 .flex-item.min-div {
   background-color: lightblue;
   border: 1px solid blue;
-  transition: background-color 0.3s ease;
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s,
+    transform 0.3s; /* Add transform transition */
 }
 
 .flex-item.min-div:hover {
-  background-color: darkblue;
+  background-color: rgb(8, 70, 0);
   color: white;
+  transform: scale(1.15); /* Grows the box and its contents */
+  z-index: 2; /* Optional: keeps the box above others while scaled */
 }
