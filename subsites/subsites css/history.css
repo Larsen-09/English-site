@@ -1,10 +1,13 @@
+
+
+
 .flex-container {
   display: flex;
-  gap: 150px;
+  gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 0 auto 50px auto; 
+  max-width: 3200px;
+  margin: 0 auto;
 }
 
 .flex-item {
@@ -12,7 +15,7 @@
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  width: 500px;
   min-height: 350px;
   height: 100%;
   display: flex;
@@ -23,15 +26,10 @@
 .flex-item.min-div {
   background-color: lightblue;
   border: 1px solid blue;
-  transition: 
-    background-color 0.3s ease,
-    color 0.3s,
-    transform 0.3s; 
+  transition: background-color 0.3s ease;
 }
 
 .flex-item.min-div:hover {
-  background-color: rgb(8, 70, 0);
+  background-color: darkblue;
   color: white;
-  transform: scale(1.15); 
-  z-index: 2; 
 }

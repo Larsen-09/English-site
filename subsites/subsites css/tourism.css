@@ -10,7 +10,7 @@ body {
   gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1550px; /* 2 boxes of 750px + 1 gap of 30px + some padding */
+  max-width: 1550px;
   margin: 0 auto;
 }
 
