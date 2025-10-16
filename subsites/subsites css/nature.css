@@ -1,3 +1,9 @@
+body {
+  background-image: url("../../Images/nature.jpeg");
+  background-size: cover;
+  margin:0px;
+}
+
 .flex-container {
   display: flex;
   gap: 150px;
