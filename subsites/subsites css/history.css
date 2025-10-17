@@ -40,12 +40,12 @@ body {
 
 .video-text-row {
   display: flex;
-  align-items: flex-start; /* Aligns the top of the video and text */
-  gap: 24px; /* Space between video and text */
+  align-items: flex-start; 
+  gap: 24px; 
 }
 
 .video-text-row p {
   margin: 0;
-  max-width: 300px; /* Optional: limit width of text */
-  align-self: flex-start; /* Ensures text stays at the top */
+  max-width: 300px;
+  align-self: flex-start; 
 }

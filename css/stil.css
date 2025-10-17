@@ -1,7 +1,7 @@
 body {
-  margin:0px;
+  margin:0px; /* Gjør sånn at nettsiden fyller hele skjermen. */
 }
-#tittel_boks,
+#tittel_boks, /* Setter reglene for hvordan tittelboksene på sidene skal oppføre seg */
 #undertittel_boks {
   background: rgba(255, 255, 255, 0.9);
   padding: 20px 40px;
@@ -9,34 +9,31 @@ body {
   width:200px;
   text-align: center;
   margin: 20px auto;
-  transition: background 0.3s, color 0.3s;
-}
+  transition: background 0.3s, color 0.3s; /* Gjør sånn at tittelboksene glir inn i en ny farge istedet for at det skjer øyeblikkelig. */
+} 
 
-#tittel_boks:hover,
+#tittel_boks:hover, /* Bestemmer nøyaktig hva som skal skje mens boksene blir hoveret over. */
 #undertittel_boks:hover {
   background: #003366;
   color: #fff;
 }
 
-header{text-align: center;}
-nav ul {
-    list-style-type: none;
+
+nav ul { /* bestemmer hvordan navigasjonsbaren ser ut. */
     margin: 0;
-    padding: 0;
     gap: 8rem;
     display: flex;
-    overflow: hidden;
-    background-color: #000000;
+    background-color: #000000; /* Denne bestemmer fargen på selve baren. */
 }
 ul li a {
   display: inline-block;
-  color: rgb(255, 255, 255);
-  padding: 14px 16px;
+  color: rgb(255, 255, 255); /* Denne bestemmer fargen på teksten inni baren. */
   text-decoration: none;
+  padding: 14px 16px;
   transition: background 0.3s, color 0.3s;
 }
 
 ul li a:hover {
-  background: #35a4ff;
-  color: #000000;
+  background: #35a4ff; /* Denne endrer på bar fargen */
+  color: #000000; /* Denne endrer på tekst fargen. */
 }
